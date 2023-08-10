@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/318182p-enable-camera-recording-when-you-leave-your-home-wifi",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X03",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "wifi",
+                    "value": "enabled"
+                },
+                "prodId": "X03"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "008",
+                    "deviceId": "IFTTTCamera",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "motionRecord",
+                        "command": "control",
+                        "value": "1"
+                    },
+                    "prodId": "2BB8"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

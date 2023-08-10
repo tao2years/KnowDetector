@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/160133p-turn-on-heater-when-temperature-drops-below-certain-degree",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"specificLevel"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "H13",
+                    "deviceId": "IFTTTHeater",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "101X"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/309595p-below-specified-temperature-turn-off-appliance-portable-a-c-unit",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"specificLevel"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

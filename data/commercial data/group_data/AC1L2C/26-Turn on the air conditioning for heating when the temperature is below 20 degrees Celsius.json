@@ -1,0 +1,61 @@
+{
+    "id": "a1ad99de-3dff-4e23-9479-1dfd9ed85255",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "046",
+                "deviceId": "e8c48eec-bb3d-43a4-bdf8-a57a359cd4e7",
+                "eventId": "103c61be-b69d-4604-8f70-d768b01bd644",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "128P"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "8c20b283-5ccd-48f8-b10c-0a4026554d75",
+                    "devType": "012",
+                    "deviceId": "945a0556-057c-43f8-aca2-80315f3fc159",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                },
+                {
+                    "actionId": "a2323916-f5fd-469",
+                    "devType": "012",
+                    "deviceId": "945a0556-057c-43f8-aca2-80315f3fc159",
+                    "params": {
+                        "capabilityId": "setMode",
+                        "command": "cool",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                },
+                {
+                    "actionId": "02-0c24bed5efad",
+                    "devType": "012",
+                    "deviceId": "tempDeviceId",
+                    "params": {
+                        "capabilityId": "setMode",
+                        "command": "heat",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

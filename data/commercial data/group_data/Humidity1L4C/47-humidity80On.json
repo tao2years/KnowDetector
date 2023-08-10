@@ -1,0 +1,60 @@
+{
+    "id": "5561743b-c2b2-495e-8b6c-6379c4108dc0",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"80"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "6faa37cb-e58d-4348-bbc7-23dba9a29e6c",
+                    "devType": "052",
+                    "deviceId": "a0829341-5550-472d-a973-2378a4ddf841",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "202K"
+                },
+                {
+                    "actionId": "67d991c6-47e6-4920-9c75-0d84afc2c8f1",
+                    "devType": "012",
+                    "deviceId": "945a0556-057c-43f8-aca2-80315f3fc159",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                },
+                {
+                    "actionId": "5c6654d9-42b6-4d53-a21d-5bcdcdde066a",
+                    "devType": "012",
+                    "deviceId": "945a0556-057c-43f8-aca2-80315f3fc159",
+                    "params": {
+                        "capabilityId": "setMode",
+                        "command": "dehumidification",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

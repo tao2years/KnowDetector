@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/144872p-humidity-above-42-turn-off-humidifier",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"42"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "01D",
+                    "deviceId": "IFTTTHumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "204L"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

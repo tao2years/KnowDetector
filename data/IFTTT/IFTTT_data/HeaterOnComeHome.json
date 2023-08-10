@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/134443p-turn-on-your-heater-when-you-get-close-to-home",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "03E",
+                "deviceId": "IFTTTSensor",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "location",
+                    "value": "home"
+                },
+                "prodId": "01A"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "H13",
+                    "deviceId": "IFTTTHeater",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "101X"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

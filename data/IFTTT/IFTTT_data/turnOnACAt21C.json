@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/103589p-wemo-a-c-turn-on-at-21c",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "=",
+                    "value": {
+                        "range":"21"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

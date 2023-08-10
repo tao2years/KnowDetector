@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/240728p-turn-on-the-lights-if-there-is-a-smoke-alarm-emergency-from-nest-protect",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "eventId": "",
+                "devType": "01B",
+                "deviceId": "IFTTTLight",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "104M"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "04E",
+                    "deviceId": "IFTTTSmoke",
+                    "action": "",
+                    "params": {
+                        "capabilityId": "mode",
+                        "command": "smoke",
+                        "value": "1"
+                    },
+                    "prodId": "02B"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

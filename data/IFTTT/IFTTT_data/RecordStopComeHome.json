@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/318183p-disable-camera-recording-when-you-come-home",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "03E",
+                "deviceId": "IFTTTSensor",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "location",
+                    "value": "home"
+                },
+                "prodId": "01A"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "008",
+                    "deviceId": "IFTTTCamera",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "motionRecord",
+                        "command": "control",
+                        "value": "2"
+                    },
+                    "prodId": "2BB8"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

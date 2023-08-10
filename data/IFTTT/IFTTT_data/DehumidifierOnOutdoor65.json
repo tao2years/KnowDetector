@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/112150p-turn-on-dehumidifier-when-outdoor-humidity-exceeds-65",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"65"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "09B",
+                    "deviceId": "IFTTTDehumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "210Y"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

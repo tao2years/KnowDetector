@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/409154p-if-alarm-is-activated-then-turn-all-lights-on",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "008",
+                "deviceId": "IFTTTAlarm",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "alarm",
+                    "command": "alarm",
+                    "value": "1"
+                },
+                "prodId": "2BB8"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

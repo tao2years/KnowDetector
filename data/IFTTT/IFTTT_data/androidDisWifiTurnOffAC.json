@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/277406p-if-your-android-device-disconnects-from-a-specific-network-then-switch-off-the-a-c-using-sensibo",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X03",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "wifi",
+                    "value": "disabled"
+                },
+                "prodId": "X03"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

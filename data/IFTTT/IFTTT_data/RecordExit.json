@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/315660p-start-recording-for-your-cameras-when-you-exit-an-area",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "03E",
+                "deviceId": "IFTTTSensor",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "location",
+                    "value": "noHome"
+                },
+                "prodId": "01A"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "008",
+                    "deviceId": "IFTTTCamera",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "motionRecord",
+                        "command": "control",
+                        "value": "1"
+                    },
+                    "prodId": "2BB8"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

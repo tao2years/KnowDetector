@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/290455p-if-temperature-drops-below-specific-level-turn-on-a-c-heating",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"specificLevel"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "setMode",
+                        "command": "heat",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/182695p-if-you-disconnect-from-your-home-wifi-network-then-turn-your-a-c-on",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X03",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "wifi",
+                    "value": "disabled"
+                },
+                "prodId": "X03"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

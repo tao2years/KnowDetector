@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/144873p-humidity-below-40-turns-on-humidifier",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"40"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "01D",
+                    "deviceId": "IFTTTHumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "204L"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

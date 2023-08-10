@@ -1,0 +1,49 @@
+{
+    "id": "fac4730b-e722-4c06-a2dd-b9c61863401d",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"50"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "1d380192-6806-4614-b184-287a53f296e0",
+                    "devType": "052",
+                    "deviceId": "a0829341-5550-472d-a973-2378a4ddf841",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "202K"
+                },
+                {
+                    "actionId": "d16ed4c6-24cf-4276-8ed7-93dbad45a3f1",
+                    "devType": "012",
+                    "deviceId": "945a0556-057c-43f8-aca2-80315f3fc159",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/165811p-if-you-leave-your-home-turn-off-hue-lamps",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "03E",
+                "deviceId": "IFTTTSensor",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "location",
+                    "value": "noHome"
+                },
+                "prodId": "01A"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

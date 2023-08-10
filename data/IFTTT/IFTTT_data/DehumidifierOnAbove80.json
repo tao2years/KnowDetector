@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/220259p-above-80-humidity-turn-on-dehumidifier",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"80"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "09B",
+                    "deviceId": "IFTTTDehumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "210Y"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

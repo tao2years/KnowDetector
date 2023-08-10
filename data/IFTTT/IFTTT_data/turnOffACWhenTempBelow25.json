@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/100778p-if-current-temperature-drops-below-25c-turn-off-a-c",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"25"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

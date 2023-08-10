@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Compiled class file
+*.class
+
+# Output directory
+/target/
+
+# IntelliJ IDEA
+.idea/
+
+# Windows
+Thumbs.db
+
+# Maven
+/.maven/
+
+# Log files
+*.log
+
+/out/
+
+
+
+

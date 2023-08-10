@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/409458p-if-your-alarm-goes-off-then-turn-on-bedroom-light",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "008",
+                "deviceId": "IFTTTAlarm",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "alarm",
+                    "command": "alarm",
+                    "value": "0"
+                },
+                "prodId": "2BB8"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

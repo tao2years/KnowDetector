@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/118248p-if-below-33-degrees-email-me-to-turn-on-humidifier",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"33"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "01D",
+                    "deviceId": "IFTTTHumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "204L"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

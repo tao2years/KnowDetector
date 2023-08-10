@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/347849p-if-motion-is-detected-by-my-oco-camera-turn-my-philips-hue-bulb-on",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "03E",
+                "deviceId": "IFTTTSensor",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "location",
+                    "value": "home"
+                },
+                "prodId": "01A"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "4060246e-3e53-4fb6-97c4-b4237fa7f493",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobileX02",
+                "eventId": "ae4359ed-cf08-4857-9a3c-fed036711450",
+                "params": {
+                    "capabilityId": "flashlight",
+                    "command": "switch",
+                    "value": "on"
+                },
+                "prodId": "X02"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "mobile",
+                    "deviceId": "mobileX02",
+                    "eventId": "a8ca25f9-41bc-473d-b58a-1bd2ffbc775b",
+                    "params": {
+                        "capabilityId": "camera",
+                        "command": "switch",
+                        "value": "on"
+                    },
+                    "prodId": "X02"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

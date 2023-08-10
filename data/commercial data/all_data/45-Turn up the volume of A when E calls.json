@@ -1,0 +1,39 @@
+{
+    "id": "623c60d6-9a92-4d2f-be86-4c4cd60a22fd",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobileX01",
+                "eventId": "ab3acdc0-8fc6-43ae-9931-e0eb71aa3c67",
+                "params": {
+                    "capabilityId": "phoneCall",
+                    "command": "call",
+                    "value": "1"
+                },
+                "prodId": "X01"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "mobile",
+                    "deviceId": "mobileX01",
+                    "actionId": "0159a6f2-d367-4a3b-a938-000415ea45b6",
+                    "params": {
+                        "capabilityId": "seekBar",
+                        "command": "UpDown",
+                        "value": "1"
+                    },
+                    "prodId": "X01"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

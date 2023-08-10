@@ -1,0 +1,75 @@
+{
+    "id": "04559b4d-6bb9-4473-9446-fcdb47404bbb",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.time",
+                "physical": "time",
+                "params": {
+                    "dayOfWeek": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "month": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "year": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "skipHoliday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "skipWorkday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "location": {
+                        "modify": "custom",
+                        "defaultValue": {
+                            "province": "",
+                            "city": "",
+                            "type": ""
+                        }
+                    },
+                    "time": {
+                        "defaultValue~": {
+                            "hour": 8,
+                            "type": "timePicker",
+                            "minute": 0
+                        },
+                        "defaultValue": "8H0"
+                    },
+                    "day": {
+                        "modify": "custom",
+                        "defaultValue~": "everyday",
+                        "defaultValue": ""
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "232f366e-af7d-4938-8477-052437b67775",
+                    "devType": "01B",
+                    "deviceId": "09c99d08-2ae1-4c44-b85f-8439ba852457",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100z"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

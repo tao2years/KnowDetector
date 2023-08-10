@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/372284p-turn-on-a-c-if-humidity-rises-above-a-certain",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"specificLevel"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "012",
+                    "deviceId": "IFTTTAC",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100g"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

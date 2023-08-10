@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/348100p-turn-camera-notifications-on-when-my-android-disconnects-from-home-wi-fi",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X03",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "wifi",
+                    "value": "disabled"
+                },
+                "prodId": "X03"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "008",
+                    "deviceId": "IFTTTCamera",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "2BB8"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "25025e6b-08b6-4ff9-8dba-c3537f57f33b",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "031",
+                "deviceId": "2812d842-0801-4d66-9fbf-1b7a96efc819",
+                "eventId": "841c127b-c2cc-4c92-b898-51ceb152aef7",
+                "params": {
+                    "capabilityId": "setDirective",
+                    "command": "pause",
+                    "value": "1"
+                },
+                "prodId": "20GQ"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "e66dc32a-886c-4156-993a-2322936633e9",
+                    "devType": "031",
+                    "deviceId": "2812d842-0801-4d66-9fbf-1b7a96efc819",
+                    "params": {
+                        "capabilityId": "setDirective",
+                        "command": "recharge",
+                        "value": "1"
+                    },
+                    "prodId": "20GQ"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

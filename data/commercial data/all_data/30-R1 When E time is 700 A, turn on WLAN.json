@@ -1,0 +1,75 @@
+{
+    "id": "0cd29a56-ebd7-453a-be17-7c4aecfed731",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.time",
+                "physical": "time",
+                "params": {
+                    "dayOfWeek": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "month": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "year": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "skipHoliday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "skipWorkday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "location": {
+                        "modify": "custom",
+                        "defaultValue": {
+                            "province": "",
+                            "city": "",
+                            "type": ""
+                        }
+                    },
+                    "time": {
+                        "defaultValue~": {
+                            "hour": 7,
+                            "type": "timePicker",
+                            "minute": 0
+                        },
+                        "defaultValue": "7H0"
+                    },
+                    "day": {
+                        "modify": "custom",
+                        "defaultValue~": "everyday",
+                        "defaultValue": ""
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "mobile",
+                    "deviceId": "mobile-X03",
+                    "actionId": "1abbb48b-d31a-4264-84ff-2a09dedc83b4",
+                    "params": {
+                        "capabilityId": "switchStatus",
+                        "command": "wifi",
+                        "value": "enabled"
+                    },
+                    "prodId": "X03"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

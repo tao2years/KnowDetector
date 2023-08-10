@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/344437p-nest-smoke-alarm-turns-on-smart-things-lights",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "04E",
+                "deviceId": "IFTTTSmoke",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "smoke",
+                    "value": "1"
+                },
+                "prodId": "02B"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/260364p-turn-on-the-flashlight-camera",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X03",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "camera",
+                    "command": "switch",
+                    "value": "on"
+                },
+                "prodId": "X03"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "mobile",
+                    "deviceId": "mobile-X03",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "flashlight",
+                        "command": "switch",
+                        "value": "on"
+                    },
+                    "prodId": "X03"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

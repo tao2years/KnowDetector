@@ -1,0 +1,13 @@
+package graph;
+
+public class Utils {
+
+    /**
+     * Check whether the given object (possibly a {@code String}) is empty.
+     * @param str string
+     * @return string is empty
+     */
+    public static boolean isEmpty(String str) {
+        return str == null || str.length() == 0;
+    }
+}

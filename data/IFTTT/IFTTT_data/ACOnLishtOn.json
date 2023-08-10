@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/356769p-if-a-c-is-turned-on-lights-on",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "eventId": "",
+                "devType": "012",
+                "deviceId": "IFTTTAC",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "100g"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

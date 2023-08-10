@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/298427p-if-smoke-alarm-warning-by-nest-protect-then-call-my-phone",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "04E",
+                "deviceId": "IFTTTSmoke",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "smoke",
+                    "value": "1"
+                },
+                "prodId": "02B"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "mobile",
+                    "deviceId": "mobile-X03",
+                    "eventId": "",
+                    "params": {
+                        "capabilityId": "phoneCall",
+                        "command": "call",
+                        "value": "1"
+                    },
+                    "prodId": "X03"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

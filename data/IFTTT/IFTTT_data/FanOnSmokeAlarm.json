@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/336305p-if-there-s-a-smoke-alarm-turn-on-fan-to-clear-smoke",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "04E",
+                "deviceId": "IFTTTSmoke",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "smoke",
+                    "value": "1"
+                },
+                "prodId": "02B"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "029",
+                    "deviceId": "IFTTTFan",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "107C"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

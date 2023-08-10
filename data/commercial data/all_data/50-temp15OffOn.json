@@ -1,0 +1,38 @@
+{
+    "id": "fac4730b-e722-4c06-a2dd-b9c61863401d",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.temperature",
+                "physical": "temperature",
+                "params": {
+                    "operator": "<",
+                    "value": {
+                        "range":"15"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "3b30bbdd-207a-4327-a637-56d5a3c38ed0",
+                    "devType": "06A",
+                    "deviceId": "d0452f4b-351d-41d8-89f7-3afb43304311",
+                    "params": {
+                        "capabilityId": "switchHeat",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "A0DF"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

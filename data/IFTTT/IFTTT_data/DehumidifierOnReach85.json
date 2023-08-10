@@ -1,0 +1,38 @@
+{
+    "id": "https://ifttt.com/applets/98135p-turn-on-my-wemo-powered-dehumidifier-when-outside-humidity-reaches-85-humidity-wemo-dehumidifie",
+    "trigger": {
+        "conditions": [
+          {
+                "condId": "cond.humidity",
+                "physical": "humidity",
+                "params": {
+                    "operator": ">",
+                    "value": {
+                        "range":"85"
+                    }
+                }
+            }
+        ],
+        "events": []
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "09B",
+                    "deviceId": "IFTTTDehumidifier",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "210Y"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

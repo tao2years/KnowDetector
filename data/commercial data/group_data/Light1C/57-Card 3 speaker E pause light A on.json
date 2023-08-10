@@ -1,0 +1,39 @@
+{
+    "id": "fdef85ac-ad01-40fc-a3e5-e409e4917bfe",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "00A",
+                "deviceId": "9e4239b1-12e6-46df-9ef9-4823c0b416ee",
+                "eventId": "b083723a-ce92-490e-a78d-768d33153919",
+                "params": {
+                    "capabilityId": "audioPlayState",
+                    "command": "pause",
+                    "value": "1"
+                },
+                "prodId": "001T"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "e335d2da-0178-4ca9-943d-a64902b00b5f",
+                    "devType": "01B",
+                    "deviceId": "2030c58b-d17d-4518-a24e-a29d85a8f243",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "100z"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

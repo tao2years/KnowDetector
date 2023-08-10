@@ -1,0 +1,50 @@
+{
+    "id": "3cd26450-ac04-4b47-b1c5-9f557164e906",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "01E",
+                "deviceId": "9609e48e-a436-41fd-b712-bd75219bc3f5",
+                "eventId": "huawei.event.switchOnOff",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "148M"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "e4135bf4-0305-4161-8357-0952256686f2",
+                    "devType": "00A",
+                    "deviceId": "9e4239b1-12e6-46df-9ef9-4823c0b416ee",
+                    "params": {
+                        "capabilityId": "playMusic",
+                        "command": "play",
+                        "value": "aiting:5373510"
+                    },
+                    "prodId": "001T"
+                },
+                {
+                    "actionId": "9d0a7f98-76d8-49be-9694-972ee5d4aa58",
+                    "devType": "00A",
+                    "deviceId": "9e4239b1-12e6-46df-9ef9-4823c0b416ee",
+                    "params": {
+                        "capabilityId": "audioPlayState",
+                        "command": "pause",
+                        "value": "1"
+                    },
+                    "prodId": "001T"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

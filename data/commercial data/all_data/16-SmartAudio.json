@@ -1,0 +1,50 @@
+{
+    "id": "544e10de-5269-4cb7-b5ad-af19c66a80f8",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "00A",
+                "deviceId": "114b066d-76ab-4449-8b12-34b05063b8e2",
+                "eventId": "c69eae6a-6165-45a7-a287-4a9ea7a158b3",
+                "params": {
+                    "capabilityId": "audioPlayState",
+                    "command": "pause",
+                    "value": "1"
+                },
+                "prodId": "X006"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "1142cde8-fbe7-4562-b5aa-fe77cd4e9ee1",
+                    "devType": "00A",
+                    "deviceId": "114b066d-76ab-4449-8b12-34b05063b8e2",
+                    "params": {
+                        "capabilityId": "playMusic",
+                        "command": "play",
+                        "value": "AmericaMusic"
+                    },
+                    "prodId": "X006"
+                },
+                {
+                    "actionId": "d4a345ad-27ca-47a9-944d-0eddb8e11a6f",
+                    "devType": "00A",
+                    "deviceId": "114b066d-76ab-4449-8b12-34b05063b8e2",
+                    "params": {
+                        "capabilityId": "audioPlayState",
+                        "command": "pause",
+                        "value": "1"
+                    },
+                    "prodId": "X006"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

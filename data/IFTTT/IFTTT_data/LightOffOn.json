@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/358522p-light-on-off",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "actionId": "",
+                "devType": "01B",
+                "deviceId": "IFTTTLight",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "104M"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "",
+                    "devType": "01B",
+                    "deviceId": "IFTTTLight",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "104M"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

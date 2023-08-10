@@ -1,0 +1,39 @@
+{
+    "id": "https://ifttt.com/applets/187195p-nest-protect-sends-a-smoke-alarm-warning-start-manything-camera-so-i-can-check-on-my-home",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "04E",
+                "deviceId": "IFTTTSmoke",
+                "eventId": "",
+                "params": {
+                    "capabilityId": "mode",
+                    "command": "smoke",
+                    "value": "1"
+                },
+                "prodId": "02B"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "devType": "008",
+                    "deviceId": "IFTTTCamera",
+                    "actionId": "",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "1"
+                    },
+                    "prodId": "2BB8"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

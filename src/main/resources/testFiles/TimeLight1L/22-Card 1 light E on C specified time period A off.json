@@ -1,0 +1,118 @@
+{
+    "id": "a7927df1-a7f3-4930-a453-6d62c69ea771",
+    "trigger": {
+        "conditions": [
+            {
+                "condId": "cond.time",
+                "physical": "time",
+                "params": {
+                    "year": {
+                        "defaultValue": ""
+                    },
+                    "startDay": {
+                        "defaultValue": ""
+                    },
+                    "skipHoliday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "skipWorkday": {
+                        "modify": "skip",
+                        "defaultValue": false
+                    },
+                    "type": {
+                        "modify": "custom",
+                        "defaultValue": "flow"
+                    },
+                    "maxCount": {
+                        "modify": "custom",
+                        "defaultValue": -1
+                    },
+                    "dayOfWeek": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "month": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "endDay": {
+                        "modify": "custom",
+                        "defaultValue": ""
+                    },
+                    "timeInterval": {
+                        "modify": "custom",
+                        "defaultValue": 0
+                    },
+                    "day": {
+                        "modify": "custom",
+                        "defaultValue~": "everyday",
+                        "defaultValue": ""
+                    },
+                    "timeRange": {
+                        "defaultValue~": "",
+                        "defaultValue": [
+                            {
+                                "startTime": {
+                                    "modify": "custom",
+                                    "defaultValue~": {
+                                        "hour": 10,
+                                        "type": "timePicker",
+                                        "minute": 0
+                                    },
+                                    "defaultValue": "10H0"
+                                },
+                                "endTime": {
+                                    "modify": "custom",
+                                    "defaultValue~": {
+                                        "hour": 12,
+                                        "type": "timePicker",
+                                        "minute": 0
+                                    },
+                                    "defaultValue": "12H0"
+                                }
+                            }
+                        ]
+                    },
+                    "timeUnit": {
+                        "modify": "custom",
+                        "defaultValue": "hour"
+                    }
+                }
+            }
+        ],
+        "events": [
+            {
+                "devType": "01B",
+                "deviceId": "2030c58b-d17d-4518-a24e-a29d85a8f243",
+                "eventId": "2114ca97-9068-4322-91fa-6906dd64d15a",
+                "params": {
+                    "capabilityId": "switchOnOff",
+                    "command": "on",
+                    "value": "1"
+                },
+                "prodId": "100z"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [
+                {
+                    "actionId": "340976f2-a1c5-4dd7-9094-5a60c1de2b6a",
+                    "devType": "01B",
+                    "deviceId": "2030c58b-d17d-4518-a24e-a29d85a8f243",
+                    "params": {
+                        "capabilityId": "switchOnOff",
+                        "command": "on",
+                        "value": "0"
+                    },
+                    "prodId": "100z"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "50186ce8-4864-4b30-9263-646469c4b36d",
+    "trigger": {
+        "conditions": [],
+        "events": [
+            {
+                "devType": "mobile",
+                "deviceId": "mobile-X14",
+                "eventId": "fee823bf-8851-4074-b614-35bc4d48e207",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "do_not_disturb",
+                    "value": "1"
+                },
+                "prodId": "X14"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "actions": [{
+                "actionId": "1d009337-4559-4fcc-81c0-ac79e21afabb",
+                "devType": "mobile",
+                "deviceId": "mobile-X14",
+                "params": {
+                    "capabilityId": "switchStatus",
+                    "command": "setRingerMode",
+                    "value": "1"
+                },
+                "prodId": "X14"
+            },
+                {
+                    "actionId": "1d009337-4559-4fcc-81c0-ac79e21afabb",
+                    "devType": "mobile",
+                    "deviceId": "mobile-X14",
+                    "params": {
+                        "capabilityId": "switchStatus",
+                        "command": "setRingerMode",
+                        "value": "0"
+                    },
+                    "prodId": "X14"
+                }
+            ],
+            "delay": {
+                "delaySync": false
+            }
+        }
+    ]
+}
